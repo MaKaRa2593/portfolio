@@ -1,0 +1,146 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top topnav" id="footer2">
+    <div class="container">
+
+        <img src="img/logo.png" alt="" class="logo1"> 
+        <a class="navbar-brand" href="#">Gaetane Vandeville</a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link scrollTo" href="#accueil">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link scrollTo" href="#a-propos">À Propos</a></li>
+                <li class="nav-item"><a class="nav-link scrollTo" href="#projects">Projets</a></li>
+                <li class="nav-item"><a class="nav-link scrollTo" href="#CV">CV</a></li>
+                <li class="nav-item"><a class="nav-link scrollTo" href="#contact">Contact</a></li>
+            </ul>
+            <button onclick="myFunction()" class="button"><i class="fa-regular fa-moon fa-xl" style="color: #000000;"></i></i></button>
+
+            <script>
+                function myFunction() {
+                   var element = document.body;
+                   element.classList.toggle("dark-mode");
+                }
+            </script>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <section id="a-propos">
+        <h2>À propos de moi</h2>
+        <p>
+            Étudiante de 17 ans en assistant développeur.
+            <br>
+            Je me considère comme une personne responsable et ordonnée.
+            <br>
+            J'attends avec impatience ma première expérience professionnelle.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2><br>
+        <div class="project-container">
+            <div class="project">
+                <h3>Titre du Projet 1</h3>
+                <img src="img/img.jpg" alt="Image Projet 1" class="projet1 project-image">
+            </div>
+            <div class="project">
+                <h3>Titre du Projet 2</h3>
+                <img src="img/img(1).jpg" alt="Image Projet 2" class="projet2 project-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="CV">
+        <h3>CV</h3><br>
+        <h4>Étude</h4>
+        <p>LYCÉE PROVINCIAL DES SCIENCES ET DES TECHNOLOGIES (Soignies)<br>
+            Professionnelle service sociale (PSS) 2019-2023<br><br>
+            Formation IFAPME<br>
+            Assistante développeuse<br>
+            Je suis actuellement en 1ère année de formation 2023-2026
+        </p>
+        <h4>Langues</h4>
+        <p>
+            Français<br>
+            En apprentissage d'anglais 
+        </p>
+        <h4>Motivation</h4>
+        <p>
+            Je suis motivée d'apprendre toujours plus et de me perfectionner dans ce qui me passionne.
+        </p>
+        <h4>Expérience</h4>
+        <p>workshop intensif de IFAPME (html , css ,php ,js)</p>
+        <h4>Qualités</h4>
+        <p>Professionnelle, polyvalente, curieuse</p>
+    </section>
+</div>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-solid fa-envelope fa-2xl" style="color: #636363;"></i>: vandevillegaetane@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/jobs/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></p>
+        <p><a href="https://github.com/MaKaRa2593" target="_blank"><i class="fa-brands fa-github fa-2xl" style="color: #636363;"></i></a></p>
+    </div><br>
+    <br><br>
+    <div class="container1">
+        <h2>Formulaire de Contact</h2><br>
+        <form action="contact.php" method="post">
+            <label for="nom">Nom complet :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
+            
+            <label for="email">Adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+   
+            <label for="objet">Objet du message :</label><br>
+            <input type="text" id="objet" name="objet" required><br><br>
+            
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</section><br><br>
+
+<footer id="ftr2">
+    <div class="container">
+        <p>Gaetane Vandeville</p>
+        <img src="img/logo.png" alt="logo" class="logo2">
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.scrollTo').on('click', function(e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 800);
+        });
+    });
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
